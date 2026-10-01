@@ -22,7 +22,7 @@ c4.metric("Late deliveries", f"{k['late_pct']}%")
 
 st.subheader("1. Revenue plateaued after Black Friday 2017")
 st.line_chart(monthly.set_index("month")["revenue"])
-st.dataframe(cat, use_container_width=True)
+st.dataframe(cat, width="stretch")
 
 st.subheader("2. 97% of customers buy only once")
 st.write("Monthly retention % by first-order cohort (blank = not yet observed)")
